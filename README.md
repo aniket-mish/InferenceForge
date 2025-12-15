@@ -1,2 +1,4 @@
 # InferenceForge
-OpenAI-compatible streaming gateway + LLM runtimes on Kubernetes, built to study latency, scaling, and safe rollouts
+
+im building a llm inference platform to understand streaming, cancellation, observability, canary, autoscaling, GPU serving, distributed training, and safe rollout. im more focused on infra problems.
+
