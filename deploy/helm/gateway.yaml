@@ -27,6 +27,8 @@ spec:
           env:
             - name: BACKEND_BASE_URL
               value: http://llama-backend:8080
+            - name: GATEWAY_MAX_CONCURRENCY
+              value: "16"
           ports:
             - containerPort: 8000
 ---
@@ -35,6 +37,8 @@ kind: Service
 metadata:
   name: gateway
   namespace: inferenceforge
+  labels:
+    app: gateway
 spec:
   selector:
     app: gateway
